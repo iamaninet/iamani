@@ -1,0 +1,369 @@
+
+/*X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+ 
+  
+  }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+  .parent{ 
+    display: flex; 
+    flex-wrap: wrap;
+     justify-content: center; 
+     align-items: center;
+height: 33em;
+margin-top: 3em;
+}
+
+   #htext{
+    font-size: 40px;
+   }  
+
+   .line p{
+    font-size: 15px;
+   }
+   
+
+
+}
+
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+ 
+
+}
+
+
+
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
+
+
+ }
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) { 
+
+
+  
+ }
+
+@media (max-width: 2650px) { 
+
+ 
+}
+/*------------------------------------------------------*/
+
+.bdy{
+  background-color: #f7f7f7;
+}
+
+
+
+.abcd{
+   text-align: center;
+    justify-content: center; 
+    display: flex; 
+    height: 39em;
+  }
+    
+    .parent{ 
+  display: flex; 
+  flex-direction:row-reverse;     
+  align-items: center; 
+   flex-wrap: wrap;
+   gap: 35px;
+
+
+      }
+
+       
+   /* logo and brand img */
+
+
+
+        .shape {
+          height: 220px;
+          width: 220px;
+          background-color:#ffffff;
+          border-radius: 50%;
+          position: relative;
+          overflow: hidden;
+          align-items: center;
+
+        }
+  
+        .shape::before {
+          content: "";
+          position: absolute;
+          inset: -10px 80px;
+          background: #ff006d;
+          transition: 0.5s;
+          animation: animate 4s linear infinite;
+        
+        }
+        
+        .shape:hover:before{
+          inset: -0px 0px;
+        
+        }
+        
+        @keyframes animate{
+          0%{
+              transform: rotate(0deg);
+          }
+          100%{
+              transform: rotate(360deg);
+          }
+        } 
+        
+        .shape::after{
+          content: '';
+          position: absolute;
+          inset: 1px;
+          background: #23354d;
+          border-radius: 50%;
+          z-index: 1;
+        }
+        
+        .imge{
+          position: absolute;
+          inset: 9px;
+          border: 2px solid transparent;
+          z-index: 3;
+          border-radius: 50%;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+      }
+  
+        
+  
+      .brand {
+        height: 198px;
+        width: 198px;
+        background-color:#ffffff;
+        border-radius: 50%;
+        margin: auto;
+        position:sticky;
+        overflow: hidden;
+        z-index: 2;
+        top:10px
+      }
+  
+    
+  
+      .logo {
+        position: absolute;
+        inset: 9px;
+        border: 2px solid transparent;
+        z-index: 3;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .imge img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: 0.5s;
+          pointer-events: none;
+          z-index: 3; 
+      }
+  
+      
+      .shape:hover .imge img{
+        opacity: 0;
+        }
+  
+      .logo img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: 2; 
+    }
+
+   
+.name h1{
+
+    font-family:myfont;
+    text-align: right;
+    font-size: 45px;
+    color:#23354d;
+
+
+
+}
+
+.li{
+  margin-top: 20px;
+}
+
+
+
+.line p{
+
+  text-align:justify;
+  direction: rtl;
+  padding-right: 10px;
+  font-family:myfont3 ;
+}
+
+
+
+.sms{
+  text-align: right;
+  padding-top: 20px;
+  padding-right:15px ;
+}
+  a:hover{
+  text-decoration: none;
+  }
+
+.a{
+  text-decoration: none;
+margin-top: 22px;
+}
+.sm{
+width: 10px;
+height: 10px;
+display: inline;
+text-decoration: none;
+
+
+
+}
+
+/* From Uiverse.io by alexmaracinaru */ 
+
+.bt{
+  text-align: right;
+  margin-top: 30px;
+}
+
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 9px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: right;
+
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #ff006d;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: myfont;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #314a69;
+}
+
+
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 15px;
+  fill: none;
+  stroke: #314a69;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+  position: left;
+}
+
+.cta:hover:before {
+  width: 122px;
+  background: #e5e5ea ;
+
+  
+}
+
+.cta:hover svg {
+  transform:translateX(-10px);
+}
+
+.cta:active {
+  transform: scale(0.95);
+
+}
+
+
+
+/* footer*/
+
+.foot{
+  position: relative;
+  font-family:myfont2;
+  text-align: center;
+  margin: 15px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+
+}
+
+
+.copyright h3  {
+  font-size: 9px;
+
+}
+
+
+
+
+
+@font-face {
+      font-family:myfont ;
+      src: url(TTF/TSRotger-Regular.ttf);
+      
+}
+
+@font-face {
+      font-family:myfont2 ;
+      src: url(TTF/texgyrecursor-regular.ttf);
+
+    }
+
+    @font-face {
+      font-family:myfont3 ;
+      src: url(TTF/TSRotger-light.ttf);
+
+    }
